@@ -4,7 +4,7 @@ example of tic-tac-toe board
 [ 'X', '' , ''  ] 
 [ 'O', '' , 'O' ]
 
-row with col 1 = empty cel at row 0 col 1
+available cell of rows = empty cel at row 0 col 1
                            at row 1 col 1
                            at row 2 col 1
 <!-- using if else -->
@@ -27,6 +27,11 @@ switch(row)
     availableCells.length - 1
     default
     return
+
+<!-- how about there's 2 empty row, what would happen to selected row????? -->
+<!-- idea : find row and col with index -->
+if availableCells.length === 2
+
 
 const selectedRow = availableCells.length - row;
 board[selectedRow][column].addMarker(player);

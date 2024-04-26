@@ -16,7 +16,7 @@ board[0][0] = "O";
 board[1][0] = "X";
 
 board[2][0] = "O";
-// board[2][1] = "O";
+board[2][1] = "O";
 board[2][2] = "O";
 
 // for (let i = 0; i < board.length; i++) {
@@ -51,7 +51,7 @@ function dropMarker(col, row, player) {
             break;
     }
 
-    return selectedRow;
+    return {availableRowCells, selectedRow};
 }
 
 // function Cell() {
